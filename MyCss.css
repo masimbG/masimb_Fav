@@ -1,0 +1,32 @@
+
+@keyframes flashColors {
+  0%   { background-color: #ff4d4d; color: white; }
+  25%  { background-color: #4dff4d; color: black; }
+  50%  { background-color: #4d4dff; color: white; }
+  75%  { background-color: #ffff4d; color: black; }
+  100% { background-color: #ff4d4d; color: white; }
+}
+
+@font-face {
+    font-family:MyShekariFont ;
+    src: url('font/Shekari/A\ Shekari.ttf');
+}
+
+
+
+body{
+
+    direction: rtl;
+    font-family:MyShekariFont ;
+}
+
+
+#divBanner{
+
+     animation: flashColors 2s infinite;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+ 
+}
